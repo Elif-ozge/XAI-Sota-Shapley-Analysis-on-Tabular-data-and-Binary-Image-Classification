@@ -29,18 +29,36 @@ Our empirical findings demonstrate that while MobileNetV2 achieves high validati
 
 ```mermaid
 flowchart LR
-    subgraph Image_Modality ["Image Classification Pipeline"]
-        A[Input Image] --> B[Spatial Partitioning <br/> 28x28 Grid Patches]
-        B --> C[Fine-Tuned MobileNetV2]
-        C --> D[Partition-based Image SHAP]
-        D --> E[Spatial Attribution Map & <br/> Background Bias Detection]
+    subgraph Vision ["Image Classification Pipeline"]
+        direction TB
+        A["Input Image"] --> B["Spatial Partitioning <br/> (28x28 Grid Patches)"]
+        B --> C["Fine-Tuned MobileNetV2"]
+        C --> D["Partition-based Image SHAP"]
+        D --> E["Top-K Spatial Attribution Map <br/> & Bias Detection"]
     end
 
-    subgraph Tabular_Modality ["Tabular Data Pipeline"]
-        F[Tabular Features] --> G[Support Vector Machine]
-        G --> H[KernelSHAP Explanation]
-        H --> I[Class-Specific Feature Importance]
+    subgraph Tabular ["Tabular Data Pipeline"]
+        direction TB
+        F["Wine Quality Features"] --> G["Support Vector Machine (SVM)"]
+        G --> H["KernelSHAP Explanation"]
+        H --> I["Class-Specific Feature Importance"]
     end
+
+    Vision ~~~ Tabular
+
+    style Vision fill:#eef7ff,stroke:#0288d1,stroke-width:2px,rx:10px
+    style Tabular fill:#fff8f0,stroke:#f57c00,stroke-width:2px,rx:10px
+
+    classDef inputStyle fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    classDef modelStyle fill:#ffe0b2,stroke:#e65100,stroke-width:2px,color:#bf360c
+    classDef shapStyle fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20
+    classDef outputStyle fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
+
+    class A,F inputStyle
+    class C,G modelStyle
+    class B,D,H shapStyle
+    class E,I outputStyle
+
 ```
 
 ---
