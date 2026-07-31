@@ -162,7 +162,6 @@ If you use this work or codebase in your research, please cite:
   author = {Yavuz, Elif Özge},
   title = {Model Interpretability via Partition-based Image SHAP and KernelSHAP},
   year = {2025},
-  howpublished = {\url{https://github.com/your-username/your-repo-name}},
-  note = {AI 490 Academic Project Report}
+  howpublished = {\url{[https://github.com/your-username/your-repo-name](https://github.com/Elif-ozge/XAI-Sota-Shapley-Analysis-on-Tabular-data-and-Binary-Image-Classification)}}
 }
 ```
