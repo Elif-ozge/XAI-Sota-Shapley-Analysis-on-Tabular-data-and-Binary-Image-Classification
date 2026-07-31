@@ -128,12 +128,6 @@ This repository contains the experimental code, Jupyter Notebooks, and interpret
 
 ---
 
-## 📝 Publication & Access Note
-
-> [!NOTE]
-> **Academic Note:** This research is currently in preparation for academic publication (YAP 490). Source code, dataset preprocessing scripts, and Jupyter notebooks are provided in this repository for academic evaluation.
-
----
 
 ## 📜 Citation
 
@@ -147,3 +141,10 @@ If you use this work or codebase in your research, please cite:
   howpublished = {\url{[https://github.com/your-username/your-repo-name](https://github.com/Elif-ozge/XAI-Sota-Shapley-Analysis-on-Tabular-data-and-Binary-Image-Classification)}}
 }
 ```
+---
+
+## 🎓 Academic Context & License
+
+This repository is developed as part of the **AI 490 Academic Project Class**, focusing on model interpretability and explainable AI (XAI) analysis.
+
+This project is open for educational and research purposes under the [MIT License](LICENSE).
