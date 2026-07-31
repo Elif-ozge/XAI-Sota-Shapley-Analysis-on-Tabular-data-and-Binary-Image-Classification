@@ -62,14 +62,16 @@ flowchart LR
 
 ## 📊 Feature Attribution & Visual Results
 
-Below is a **Top-K Spatial Patch Attribution Map** generated via Partition-based Image SHAP ($28 \times 28$ spatial grid partitioning), highlighting the most influential local regions for class decisions and exposing background reliance.
+Below are **Top-K Spatial Patch Attribution Maps** generated via Partition-based Image SHAP ($28 \times 28$ spatial grid partitioning), comparing model focus across Cat and Dog test instances.
 
 <p align="center">
-  <img src="assets/top_k_patch_attribution.png" alt="Top-K Spatial Patch Attribution Map" width="480"/>
+  <img src="assets/top_k_patch_cat.png" alt="Top-K Patch Attribution - Cat Instance" width="410"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/top_k_patch_dog.png" alt="Top-K Patch Attribution - Dog Instance" width="410"/>
 </p>
 
 <p align="center">
-  <i>Figure 1: Top-K Spatial Patch Attribution Map. Red bounding boxes highlight positive contributions toward the <b>Dog</b> class ($D1-D4$), while green boxes highlight contributions toward <b>Cat</b> ($C1-C4$). Note how background artifacts (e.g., blanket textures) improperly influence inference.</i>
+  <i>Figure 1: Side-by-side Top-K Spatial Patch Attribution Maps for Cat (left) and Dog (right) instances. Red bounding boxes denote positive contributions pushing toward <b>Dog</b> ($D1-D4$), while green boxes denote contributions pushing toward <b>Cat</b> ($C1-C4$). Note the background and artifact reliance across both classes.</i>
 </p>
 
 ---
