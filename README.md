@@ -118,31 +118,13 @@ Below are **Top-K Spatial Patch Attribution Maps** generated via Partition-based
 
 ---
 
-## ⚡ Quick Start & Reproducibility
+## 🛠️ Implementation & Technical Stack
 
-### 1. Clone & Set Up Environment
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
+This repository contains the experimental code, Jupyter Notebooks, and interpretability workflows developed for this research:
 
-### 2. Dependencies
-```text
-torch
-torchvision
-shap
-scikit-learn
-matplotlib
-numpy
-opencv-python
-```
-
-### 3. Run Interpretability Notebooks
-- Open `cat_or_dog_model_dataset/mobileNetv2_partition_shap.ipynb` to run Partition-based Image SHAP.
-- Open `tabular_data_classification/wine_quality_shap.ipynb` to run KernelSHAP on tabular data.
+- **Computer Vision Interpretability:** Built with `PyTorch` and `SHAP` using $28 \times 28$ spatial grid partitioning to explain fine-tuned **MobileNetV2** predictions on visual data.
+- **Tabular Data Interpretability:** Implemented with `Scikit-Learn` (SVM) and `KernelSHAP` to audit feature attributions under class imbalance on the **Wine Quality** dataset.
+- **Experimental Notebooks:** The notebooks located in `cat_or_dog_model_dataset/` and `tabular_data_classification/` document the dataset preparation, attribution calculation, and heatmap generation processes.
 
 ---
 
