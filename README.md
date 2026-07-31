@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>Explaining Deep Learning & Machine Learning Decisions via Spatial Partitioning & Feature Attribution</b><br/>
-  <I>AI 490 — Academic Research Project</i>
+  <I>AI 490 — Academic Research & Project </i>
 </p>
 
 <p align="center">
@@ -62,16 +62,14 @@ flowchart LR
 
 ## 📊 Feature Attribution & Visual Results
 
-Below are feature attribution maps generated via Partition-based Image SHAP, illustrating the model's reliance on specific grid regions for classification.
+Below is a **Top-K Spatial Patch Attribution Map** generated via Partition-based Image SHAP ($28 \times 28$ spatial grid partitioning), highlighting the most influential local regions for class decisions and exposing background reliance.
 
 <p align="center">
-  <img src="assets/shap_result_1.png" alt="SHAP Explanation - Object vs Background Attribution" width="420"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="assets/shap_result_2.png" alt="SHAP Explanation - Feature Attribution Map" width="420"/>
+  <img src="assets/top_k_patch_attribution.png" alt="Top-K Spatial Patch Attribution Map" width="480"/>
 </p>
 
 <p align="center">
-  <i>Figure 1: SHAP patch attributions highlight spatial features contributing to the model's confidence scores, exposing critical background reliance during inference.</i>
+  <i>Figure 1: Top-K Spatial Patch Attribution Map. Red bounding boxes highlight positive contributions toward the <b>Dog</b> class ($D1-D4$), while green boxes highlight contributions toward <b>Cat</b> ($C1-C4$). Note how background artifacts (e.g., blanket textures) improperly influence inference.</i>
 </p>
 
 ---
