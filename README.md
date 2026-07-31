@@ -65,9 +65,9 @@ flowchart LR
 Below are **Top-K Spatial Patch Attribution Maps** generated via Partition-based Image SHAP ($28 \times 28$ spatial grid partitioning), comparing model focus across Cat and Dog test instances.
 
 <p align="center">
-  <img src="assets/top_k_patch_cat.png" alt="Top-K Patch Attribution - Cat Instance" width="410"/>
+  <img src="assets/cat_top_patches.png" alt="Top-K Patch Attribution - Cat Instance" width="410"/>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/top_k_patch_dog.png" alt="Top-K Patch Attribution - Dog Instance" width="410"/>
+  <img src="assets/dog_top_patches.png" alt="Top-K Patch Attribution - Dog Instance" width="410"/>
 </p>
 
 <p align="center">
