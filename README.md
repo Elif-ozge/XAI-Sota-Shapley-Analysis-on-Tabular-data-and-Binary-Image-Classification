@@ -4,7 +4,7 @@ and Tabular Data</h1>
 
 <p align="center">
   <b>Explaining Deep Learning & Machine Learning Decisions via Spatial Partitioning & Feature Attribution</b><br/>
-  <I>AI 490 — Academic Research & Project </i>
+  <I>AI 490 — Academic Research Project </i>
 </p>
 
 <p align="center">
