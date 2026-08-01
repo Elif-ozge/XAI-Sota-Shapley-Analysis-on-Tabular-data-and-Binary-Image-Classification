@@ -1,4 +1,6 @@
-<h1 align="center"> Model Interpretability via Partition-based Image SHAP & KernelSHAP</h1>
+<h1 align="center"> Beyond Local Explanations: Investigating SHAP
+Performance and Challenges in Image Classification
+and Tabular Data</h1>
 
 <p align="center">
   <b>Explaining Deep Learning & Machine Learning Decisions via Spatial Partitioning & Feature Attribution</b><br/>
@@ -63,7 +65,7 @@ flowchart LR
 
 ---
 
-## 🏷️ Key Keywords
+##  Keywords
 
 `Explainable AI (XAI)` • `SHAP` • `MobileNetV2` • `KernelSHAP` • `Background Bias Detection` • `Model Interpretability`
 
@@ -78,7 +80,7 @@ flowchart LR
 
 ---
 
-## 📊 Feature Attribution & Visual Results
+##  Feature Attribution & Visual Results
 
 Below are **Top-K Spatial Patch Attribution Maps** generated via Partition-based Image SHAP ($28 \times 28$ spatial grid partitioning), comparing model focus across Cat and Dog test instances.
 
@@ -94,7 +96,7 @@ Below are **Top-K Spatial Patch Attribution Maps** generated via Partition-based
 
 ---
 
-## 💡 Key Takeaways & Core Findings
+##  Key Takeaways & Core Findings
 
 - **Background Bias Exposure:** High validation accuracy can be deceptive. SHAP attributions revealed that the vision model frequently leveraged background context rather than target object semantics.
 - **Noise Reduction via Partitioning:** Aggregating fine-grained pixel attributions into fixed $28 \times 28$ spatial grid partitions significantly decreased attribution noise, producing clear local heatmaps.
@@ -102,7 +104,7 @@ Below are **Top-K Spatial Patch Attribution Maps** generated via Partition-based
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```text
 .
@@ -136,7 +138,9 @@ If you use this work or codebase in your research, please cite:
 ```bibtex
 @misc{yavuz2026shap,
   author = {Yavuz, Elif Özge},
-  title = {Model Interpretability via Partition-based Image SHAP and KernelSHAP},
+  title = {Beyond Local Explanations: Investigating SHAP
+Performance and Challenges in Image Classification
+and Tabular Data},
   year = {2025},
   howpublished = {\url{[https://github.com/your-username/your-repo-name](https://github.com/Elif-ozge/XAI-Sota-Shapley-Analysis-on-Tabular-data-and-Binary-Image-Classification)}}
 }
@@ -145,6 +149,6 @@ If you use this work or codebase in your research, please cite:
 
 ##  Academic Context & License
 
-This repository is developed as part of the **AI 490 Academic Project Class**, focusing on model interpretability and explainable AI (XAI) analysis.
+This repository is developed as part of the **AI 490 Academic Research Project Class**, focusing on model interpretability and explainable AI (XAI) analysis.
 
 This project is open for educational and research purposes under the [MIT License](LICENSE).
