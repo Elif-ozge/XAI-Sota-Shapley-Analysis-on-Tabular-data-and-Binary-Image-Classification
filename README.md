@@ -1,4 +1,4 @@
-<h1 align="center">🔍 Model Interpretability via Partition-based Image SHAP & KernelSHAP</h1>
+<h1 align="center"> Model Interpretability via Partition-based Image SHAP & KernelSHAP</h1>
 
 <p align="center">
   <b>Explaining Deep Learning & Machine Learning Decisions via Spatial Partitioning & Feature Attribution</b><br/>
@@ -15,7 +15,7 @@
 
 ---
 
-## 📌 Abstract
+## Abstract
 
 This research investigates model interpretability in computer vision and tabular classification using **SHAP (Shapley Additive Explanations)**. High-capacity machine learning models often exhibit shortcut learning—achieving high validation accuracy while relying on spurious or unintended features.
 
@@ -25,7 +25,7 @@ Our empirical findings demonstrate that while MobileNetV2 achieves high validati
 
 ---
 
-## 🏗️ System Architecture & Workflow
+##  System Architecture & Workflow
 
 ```mermaid
 flowchart LR
@@ -69,7 +69,7 @@ flowchart LR
 
 ---
 
-## 🔬 Experimental Setup & Datasets
+##  Experimental Setup & Datasets
 
 | Modality | Target Model | Dataset | Interpretability Method | Key Focus |
 | :--- | :--- | :--- | :--- | :--- |
@@ -118,7 +118,7 @@ Below are **Top-K Spatial Patch Attribution Maps** generated via Partition-based
 
 ---
 
-## 🛠️ Implementation & Technical Stack
+##  Implementation & Technical Stack
 
 This repository contains the experimental code, Jupyter Notebooks, and interpretability workflows developed for this research:
 
@@ -129,7 +129,7 @@ This repository contains the experimental code, Jupyter Notebooks, and interpret
 ---
 
 
-## 📜 Citation
+##  Citation
 
 If you use this work or codebase in your research, please cite:
 
@@ -143,7 +143,7 @@ If you use this work or codebase in your research, please cite:
 ```
 ---
 
-## 🎓 Academic Context & License
+##  Academic Context & License
 
 This repository is developed as part of the **AI 490 Academic Project Class**, focusing on model interpretability and explainable AI (XAI) analysis.
 
