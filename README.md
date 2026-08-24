@@ -142,7 +142,7 @@ If you use this work or codebase in your research, please cite:
 Performance and Challenges in Image Classification
 and Tabular Data},
   year = {2025},
-  howpublished = {\url{[https://github.com/your-username/your-repo-name](https://github.com/Elif-ozge/XAI-Sota-Shapley-Analysis-on-Tabular-data-and-Binary-Image-Classification)}}
+  howpublished = {\url{https://github.com/Elif-ozge/XAI-Sota-Shapley-Analysis-on-Tabular-data-and-Binary-Image-Classification}}
 }
 ```
 ---
