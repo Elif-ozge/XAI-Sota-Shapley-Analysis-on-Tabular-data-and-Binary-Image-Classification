@@ -147,8 +147,5 @@ and Tabular Data},
 ```
 ---
 
-##  Academic Context & License
-
-This repository is developed as part of the **AI 490 Academic Research Project Class**, focusing on model interpretability and explainable AI (XAI) analysis.
 
 This project is open for educational and research purposes under the [MIT License](LICENSE).
