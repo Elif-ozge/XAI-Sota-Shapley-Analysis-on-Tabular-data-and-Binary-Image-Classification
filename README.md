@@ -2,10 +2,6 @@
 Performance and Challenges in Image Classification
 and Tabular Data</h1>
 
-<p align="center">
-  <b>Explaining Deep Learning & Machine Learning Decisions via Spatial Partitioning & Feature Attribution</b><br/>
-  <I>AI 490 — Academic Research Project </i>
-</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white" alt="Python"/>
@@ -19,11 +15,10 @@ and Tabular Data</h1>
 
 ## Abstract
 
-This research investigates model interpretability in computer vision and tabular classification using **SHAP (Shapley Additive Explanations)**. High-capacity machine learning models often exhibit shortcut learning—achieving high validation accuracy while relying on spurious or unintended features.
-
-To address attribution noise in visual explanations, we apply a **Partition-based Image SHAP** framework leveraging $28 \times 28$ spatial grid partitioning on a fine-tuned **MobileNetV2** architecture. For tabular classification, **KernelSHAP** is integrated with a **Support Vector Machine (SVM)** to evaluate class-specific feature contributions under class imbalance.
-
-Our empirical findings demonstrate that while MobileNetV2 achieves high validation accuracy on standard visual benchmarks, SHAP explanations expose a critical dependency on background spatial regions rather than target semantic object features.
+This study focuses on the application of SHAP (Shapley Additive Explanations) to interpret complex machine learning models, specifically focusing on a MobileNetV2 and an SVM model for tabular data. For image classification, a partition-based Image SHAP approach was utilized, where pixel-level attributions were aggregated into 28×28 fixed-size grid patches to enhance interpretability and reduce noise. For the tabular
+dataset, KernelSHAP was applied to reveal class-specific feature influences and address the effects of class imbalance. The results indicate that while the image model achieves high accuracy,SHAP analysis reveals a significant reliance on background regions rather than object-specific features. Furthermore, the study demonstrates that class-specific feature attribution and correlation-based confidence scores provide deeper insights into the decision strategies of multiclass models. Despite computational costs and sensitivity to background cues, the findings
+suggest that careful aggregation and visualization of SHAP values can lead to meaningful local explanations for both image and
+tabular data.
 
 ---
 
@@ -113,24 +108,6 @@ This repository contains the experimental code, Jupyter Notebooks, and interpret
 - **Tabular Data Interpretability:** Implemented with `Scikit-Learn` (SVM) and `KernelSHAP` to audit feature attributions under class imbalance on the **Wine Quality** dataset.
 - **Experimental Notebooks:** The notebooks located in `cat_or_dog_model_dataset/` and `tabular_data_classification/` document the dataset preparation, attribution calculation, and heatmap generation processes.
 
----
-
-
-##  Citation
-
-If you use this work or codebase in your research, please cite:
-
-```bibtex
-@misc{yavuz2026shap,
-  author = {Yavuz, Elif Özge},
-  title = {Beyond Local Explanations: Investigating SHAP
-Performance and Challenges in Image Classification
-and Tabular Data},
-  year = {2025},
-  howpublished = {\url{https://github.com/Elif-ozge/XAI-Sota-Shapley-Analysis-on-Tabular-data-and-Binary-Image-Classification}}
-}
-```
----
 
 
 This project is open for educational and research purposes under the [MIT License](LICENSE).
