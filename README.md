@@ -104,22 +104,6 @@ Below are **Top-K Spatial Patch Attribution Maps** generated via Partition-based
 
 ---
 
-##  Repository Structure
-
-```text
-.
-├── cat_or_dog_model_dataset/
-│   ├── mobileNetv2_partition_shap.ipynb  # Partition-based SHAP implementation on MobileNetV2
-│   ├── ft-mobilenetv2-cats-vs-dogs-on-new-data.ipynb # MobileNetV2 fine-tuning notebook
-│   └── integrated_grad.ipynb             # Comparative attribution analysis (Integrated Gradients)
-├── tabular_data_classification/
-│   └── wine_quality_shap.ipynb           # KernelSHAP & SVM classification pipeline
-├── assets/                               # SHAP visual outputs & heatmaps
-└── README.md                             # Project documentation
-```
-
----
-
 ##  Implementation & Technical Stack
 
 This repository contains the experimental code, Jupyter Notebooks, and interpretability workflows developed for this research:
