@@ -101,6 +101,7 @@ Below are **Top-K Spatial Patch Attribution Maps** generated via Partition-based
 - **Background Bias Exposure:** High validation accuracy can be deceptive. SHAP attributions revealed that the vision model frequently leveraged background context rather than target object semantics.
 - **Noise Reduction via Partitioning:** Aggregating fine-grained pixel attributions into fixed $28 \times 28$ spatial grid partitions significantly decreased attribution noise, producing clear local heatmaps.
 - **Multi-Modal Diagnostic Capability:** Combining Partition-based SHAP for deep visual networks and KernelSHAP for tabular kernel models provides a unified framework for model auditing.
+- **Spotting Class Imbalance via SHAP Changes:** Unbalanced data caused SHAP feature rankings to shift, proving that tracking these score changes and confidence levels can help detect model errors and overfitting on minority classes.
 
 ---
 
