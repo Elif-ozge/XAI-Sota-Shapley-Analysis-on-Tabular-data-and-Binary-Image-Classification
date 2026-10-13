@@ -15,9 +15,8 @@ and Tabular Data</h1>
 
 ## Abstract
 
-This study focuses on the application of SHAP (Shapley Additive Explanations) to interpret complex machine learning models, specifically focusing on a MobileNetV2 and an SVM model for tabular data. For image classification, a partition-based Image SHAP approach was utilized, where pixel-level attributions were aggregated into 28×28 fixed-size grid patches to enhance interpretability and reduce noise. For the tabular
-dataset, KernelSHAP was applied to reveal class-specific feature influences and address the effects of class imbalance. The results indicate that while the image model achieves high accuracy,SHAP analysis reveals a significant reliance on background regions rather than object-specific features. Furthermore, the study demonstrates that class-specific feature attribution and correlation-based confidence scores provide deeper insights into the decision strategies of multiclass models. Despite computational costs and sensitivity to background cues, the findings
-suggest that careful aggregation and visualization of SHAP values can lead to meaningful local explanations for both image and
+This study focuses on the application of **SHAP (Shapley Additive Explanations)** to interpret complex machine learning models, specifically focusing on a MobileNetV2 and an SVM model for tabular data. For image classification, a **partition-based Image SHAP** approach was utilized, where pixel-level attributions were aggregated into 28×28 fixed-size grid patches to enhance interpretability and reduce noise. For the tabular
+dataset, **KernelSHAP** was applied to reveal class-specific feature influences and address the effects of class imbalance. The results indicate that while the image model achieves high accuracy,SHAP analysis reveals a significant reliance on background regions rather than object-specific features. Furthermore, the study demonstrates that class-specific feature attribution and correlation-based confidence scores provide deeper insights into the decision strategies of multiclass models. Despite computational costs and sensitivity to background cues, the findings suggest that careful aggregation and visualization of SHAP values can lead to meaningful local explanations for both image and
 tabular data.
 
 ---
@@ -108,6 +107,6 @@ This repository contains the experimental code, Jupyter Notebooks, and interpret
 - **Tabular Data Interpretability:** Implemented with `Scikit-Learn` (SVM) and `KernelSHAP` to audit feature attributions under class imbalance on the **Wine Quality** dataset.
 - **Experimental Notebooks:** The notebooks located in `cat_or_dog_model_dataset/` and `tabular_data_classification/` document the dataset preparation, attribution calculation, and heatmap generation processes.
 
-
+---
 
 This project is open for educational and research purposes under the [MIT License](LICENSE).
