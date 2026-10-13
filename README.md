@@ -108,5 +108,12 @@ This repository contains the experimental code, Jupyter Notebooks, and interpret
 - **Experimental Notebooks:** The notebooks located in `cat_or_dog_model_dataset/` and `tabular_data_classification/` document the dataset preparation, attribution calculation, and heatmap generation processes.
 
 ---
+## Datasets
+
+This project utilizes the following benchmark datasets for evaluation:
+
+* **Dog and Cat Classification Dataset:** Used for the vision model (MobileNetV2) and Partition-based Image SHAP analysis. Available on Kaggle: [Dog and Cat Classification Dataset](https://www.kaggle.com/datasets/bhavikjikadara/dog-and-cat-classification-dataset).
+* **Wine Quality Dataset:** Used for the tabular classification model (SVM) and KernelSHAP class-imbalance diagnostics. Available on Hugging Face: [julien-c/wine-quality](https://huggingface.co/datasets/julien-c/wine-quality).
+---
 
 This project is open for educational and research purposes under the [MIT License](LICENSE).
